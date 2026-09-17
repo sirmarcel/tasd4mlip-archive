@@ -1,0 +1,63 @@
+{
+ "task": "probe",
+ "structure": "RSM1831",
+ "model": "pet-xs",
+ "supercell": "minconv",
+ "mult": [
+  2,
+  2,
+  2
+ ],
+ "n_primitive": 144,
+ "n_atoms": 1152,
+ "n_padded": 1153,
+ "dim": 3459,
+ "n_pairs_padded": 11392,
+ "padding": "production",
+ "pet_extra_neighbors": 0,
+ "setup_s": 7.758964738808572,
+ "status": "ok",
+ "provenance": {
+  "git": {
+   "sha": "71c71d31edcd03a7e54e85ee4749b63137596f1c",
+   "dirty": false
+  },
+  "versions": {
+   "sadmof": "0.0.0",
+   "jax": "0.10.1",
+   "jaxlib": "0.10.1",
+   "ase": "3.28.0",
+   "e3nn-jax": "0.21.0",
+   "flax": "0.12.7",
+   "asdex": "0.5.1",
+   "pet-jax": "0.1.0",
+   "marathon-train": "0.3.0"
+  },
+  "host": {
+   "node": "kh003",
+   "machine": "x86_64",
+   "slurm": {
+    "cluster_name": "kuma",
+    "job_id": "4097907",
+    "job_partition": "h100"
+   }
+  },
+  "devices": {
+   "platform": "gpu",
+   "kind": "NVIDIA H100",
+   "count": 1
+  }
+ },
+ "mode": "fwd_over_rev",
+ "chunk_size": 1,
+ "remat": true,
+ "n_probe": 32,
+ "ms_per_hvp": 5.8337150840088725,
+ "ms_per_hvp_raw": 5.866777850314975,
+ "fixed_s": 0.0010580085217952728,
+ "grad_s": 0.0025760550051927567,
+ "sweep_s": 0.1877368912100792,
+ "compile_s": 4.575171956792474,
+ "peak_bytes": 995057920,
+ "bytes_limit": 94982821105
+}

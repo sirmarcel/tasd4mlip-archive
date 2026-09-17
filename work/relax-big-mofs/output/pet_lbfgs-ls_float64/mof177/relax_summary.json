@@ -1,0 +1,33 @@
+{
+  "structure": "sources/processed/big-mofs/structures.xyz",
+  "index": "0",
+  "calculator": "pet",
+  "checkpoint": "sources/processed/pet-mad-xs",
+  "dtype": "float64",
+  "optimizer": "lbfgs-ls",
+  "fmax_target": 0.005,
+  "max_steps": 25000,
+  "num_neighbors": null,
+  "n_atoms": 808,
+  "n_steps": 348,
+  "converged": true,
+  "wall_s": 20.3,
+  "fmax_final": 0.00492,
+  "provenance": {
+    "git": {
+      "sha": "75be698c66c30335485bcfc934200a05c6b3b1ae",
+      "dirty": false
+    },
+    "versions": {
+      "sadmof": "0.0.0",
+      "jax": "0.10.1",
+      "jaxlib": "0.10.1",
+      "ase": "3.28.0",
+      "e3nn-jax": "0.21.0",
+      "flax": "0.12.7",
+      "asdex": "0.3.3",
+      "pet-jax": "0.1.0",
+      "marathon-train": "0.3.0"
+    }
+  }
+}

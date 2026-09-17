@@ -1,0 +1,331 @@
+{
+  "setting": {
+    "mode": "fwd_over_rev",
+    "chunk_size": 1,
+    "remat": true,
+    "precision": "float32",
+    "headroom": 1.0,
+    "feasible_chunks": [
+      1
+    ],
+    "ms_per_hvp_at_median": 1188.29,
+    "padding": "tight",
+    "device": "NVIDIA H100"
+  },
+  "device": "NVIDIA H100",
+  "n_pairs": 6,
+  "pairs": [
+    {
+      "structure": "RSM0023",
+      "model": "mace",
+      "padding": "tight",
+      "mode": "fwd_over_rev",
+      "chunk_size": 1,
+      "remat": true,
+      "supercell": "minconv",
+      "mult": [
+        8,
+        3,
+        5
+      ],
+      "n_primitive": 32,
+      "n_atoms": 3840,
+      "n_padded": 3856,
+      "dim": 11568,
+      "n_pairs_padded": 174736,
+      "default": {
+        "status": "ok",
+        "ms_per_hvp": 317.71024569752626,
+        "ms_per_hvp_raw": 317.9352976876544,
+        "fixed_s": 0.007201663684099913,
+        "grad_s": 0.08760896977037191,
+        "sweep_s": 10.17392952600494,
+        "compile_s": 12.133945008274168,
+        "peak_bytes": 17507848704,
+        "bytes_limit": 94982821105,
+        "n_probe": 32
+      },
+      "highest": {
+        "status": "ok",
+        "ms_per_hvp": 396.8535532185342,
+        "ms_per_hvp_raw": 396.994902723236,
+        "fixed_s": 0.004523184150457382,
+        "grad_s": 0.12431934475898743,
+        "sweep_s": 12.703836887143552,
+        "compile_s": 13.936419032979757,
+        "peak_bytes": 17497985792,
+        "bytes_limit": 94982821105,
+        "n_probe": 32
+      },
+      "warm_ratio": 1.2491053045747722,
+      "cold_ratio": 1.194208613608029,
+      "peak_ratio": 0.9994366576861184
+    },
+    {
+      "structure": "RSM1831",
+      "model": "mace",
+      "padding": "tight",
+      "mode": "fwd_over_rev",
+      "chunk_size": 1,
+      "remat": true,
+      "supercell": "minconv",
+      "mult": [
+        4,
+        3,
+        5
+      ],
+      "n_primitive": 144,
+      "n_atoms": 8640,
+      "n_padded": 8656,
+      "dim": 25968,
+      "n_pairs_padded": 502688,
+      "default": {
+        "status": "ok",
+        "ms_per_hvp": 1190.7717357971705,
+        "ms_per_hvp_raw": 1190.5841955594951,
+        "fixed_s": -0.00600128760561347,
+        "grad_s": 0.35767499823123217,
+        "sweep_s": 38.098694257903844,
+        "compile_s": 12.140428842045367,
+        "peak_bytes": 47027851008,
+        "bytes_limit": 94982821105,
+        "n_probe": 32
+      },
+      "highest": {
+        "status": "ok",
+        "ms_per_hvp": 1376.6310416976921,
+        "ms_per_hvp_raw": 1376.989311160287,
+        "fixed_s": 0.011464622803032398,
+        "grad_s": 0.4413211098872125,
+        "sweep_s": 44.06365795712918,
+        "compile_s": 13.528852006886154,
+        "peak_bytes": 47010133504,
+        "bytes_limit": 94982821105,
+        "n_probe": 32
+      },
+      "warm_ratio": 1.156083068075257,
+      "cold_ratio": 1.146367739131051,
+      "peak_ratio": 0.9996232550792724
+    },
+    {
+      "structure": "RSM1831",
+      "model": "pet-s",
+      "padding": "production",
+      "mode": "fwd_over_rev",
+      "chunk_size": 1,
+      "remat": true,
+      "supercell": "minconv",
+      "mult": [
+        4,
+        3,
+        4
+      ],
+      "n_primitive": 144,
+      "n_atoms": 6912,
+      "n_padded": 6913,
+      "dim": 20739,
+      "n_pairs_padded": 122304,
+      "default": {
+        "status": "ok",
+        "ms_per_hvp": 125.2964996965602,
+        "ms_per_hvp_raw": 125.26674874243326,
+        "fixed_s": -0.0009520305320620537,
+        "grad_s": 0.05924009112641215,
+        "sweep_s": 4.0085359597578645,
+        "compile_s": 6.763480311259627,
+        "peak_bytes": 21740164352,
+        "bytes_limit": 94982821105,
+        "n_probe": 32
+      },
+      "highest": {
+        "status": "ok",
+        "ms_per_hvp": 246.27982880338095,
+        "ms_per_hvp_raw": 246.29577415180393,
+        "fixed_s": 0.0005102511495351791,
+        "grad_s": 0.11946939118206501,
+        "sweep_s": 7.881464772857726,
+        "compile_s": 7.219446414150298,
+        "peak_bytes": 21741664000,
+        "bytes_limit": 94982821105,
+        "n_probe": 32
+      },
+      "warm_ratio": 1.9655762882428083,
+      "cold_ratio": 1.4018648697772194,
+      "peak_ratio": 1.0000689805272729
+    },
+    {
+      "structure": "RSM1831",
+      "model": "pet-xs",
+      "padding": "production",
+      "mode": "fwd_over_rev",
+      "chunk_size": 1,
+      "remat": true,
+      "supercell": "minconv",
+      "mult": [
+        2,
+        2,
+        2
+      ],
+      "n_primitive": 144,
+      "n_atoms": 1152,
+      "n_padded": 1153,
+      "dim": 3459,
+      "n_pairs_padded": 11392,
+      "default": {
+        "status": "ok",
+        "ms_per_hvp": 5.813710595248267,
+        "ms_per_hvp_raw": 5.85085064813029,
+        "fixed_s": 0.001188481692224741,
+        "grad_s": 0.0025797798298299313,
+        "sweep_s": 0.1872272207401693,
+        "compile_s": 4.608953502960503,
+        "peak_bytes": 995057920,
+        "bytes_limit": 94982821105,
+        "n_probe": 32
+      },
+      "highest": {
+        "status": "ok",
+        "ms_per_hvp": 8.983845502370968,
+        "ms_per_hvp_raw": 9.026603438542224,
+        "fixed_s": 0.0013682539574801922,
+        "grad_s": 0.004336867015808821,
+        "sweep_s": 0.2888513100333512,
+        "compile_s": 4.9608826520852745,
+        "peak_bytes": 971749120,
+        "bytes_limit": 94982821105,
+        "n_probe": 32
+      },
+      "warm_ratio": 1.5452859847742946,
+      "cold_ratio": 1.0945655021247818,
+      "peak_ratio": 0.9765754339204696
+    },
+    {
+      "structure": "RSM1885",
+      "model": "mace",
+      "padding": "tight",
+      "mode": "fwd_over_rev",
+      "chunk_size": 1,
+      "remat": true,
+      "supercell": "minconv",
+      "mult": [
+        11,
+        3,
+        3
+      ],
+      "n_primitive": 148,
+      "n_atoms": 14652,
+      "n_padded": 14656,
+      "dim": 43968,
+      "n_pairs_padded": 1183648,
+      "default": {
+        "status": "ok",
+        "ms_per_hvp": 2498.3597259561066,
+        "ms_per_hvp_raw": 2499.115353784873,
+        "fixed_s": 0.02418009052053094,
+        "grad_s": 0.7933515179902315,
+        "sweep_s": 79.97169132111594,
+        "compile_s": 12.700025714933872,
+        "peak_bytes": 91364590592,
+        "bytes_limit": 94982821105,
+        "n_probe": 32
+      },
+      "highest": {
+        "status": "ok",
+        "ms_per_hvp": 2877.4814647913445,
+        "ms_per_hvp_raw": 2862.7272212179378,
+        "fixed_s": -0.47213579434901476,
+        "grad_s": 0.9441092060878873,
+        "sweep_s": 91.60727107897401,
+        "compile_s": 14.999981426168233,
+        "peak_bytes": 91530308608,
+        "bytes_limit": 94982821105,
+        "n_probe": 32
+      },
+      "warm_ratio": 1.15174825902629,
+      "cold_ratio": 1.1503752807738679,
+      "peak_ratio": 1.0018138100868863
+    },
+    {
+      "structure": "mil101",
+      "model": "mace",
+      "padding": "tight",
+      "mode": "fwd_over_rev",
+      "chunk_size": 1,
+      "remat": true,
+      "supercell": "unit",
+      "mult": [
+        1,
+        1,
+        1
+      ],
+      "n_primitive": 3604,
+      "n_atoms": 3604,
+      "n_padded": 3616,
+      "dim": 10848,
+      "n_pairs_padded": 134272,
+      "default": {
+        "status": "ok",
+        "ms_per_hvp": 249.90127427736297,
+        "ms_per_hvp_raw": 250.0419417192461,
+        "fixed_s": 0.004501358140259981,
+        "grad_s": 0.08189346035942435,
+        "sweep_s": 8.001342135015875,
+        "compile_s": 12.112187705934048,
+        "peak_bytes": 15061303552,
+        "bytes_limit": 94982821105,
+        "n_probe": 32
+      },
+      "highest": {
+        "status": "ok",
+        "ms_per_hvp": 321.9678498862777,
+        "ms_per_hvp_raw": 321.573956971406,
+        "fixed_s": -0.012604573275893927,
+        "grad_s": 0.10641979705542326,
+        "sweep_s": 10.290366623084992,
+        "compile_s": 13.692061104811728,
+        "peak_bytes": 15061873664,
+        "bytes_limit": 94982821105,
+        "n_probe": 32
+      },
+      "warm_ratio": 1.2883801846041358,
+      "cold_ratio": 1.1923530040495407,
+      "peak_ratio": 1.0000378527660658
+    }
+  ],
+  "provenance": {
+    "git": {
+      "sha": "d9067e472bc43f967d1db0a4e1469bbbbd3b497c",
+      "dirty": true
+    },
+    "versions": {
+      "sadmof": "0.0.0",
+      "jax": "0.10.1",
+      "jaxlib": "0.10.1",
+      "ase": "3.28.0",
+      "e3nn-jax": "0.21.0",
+      "flax": "0.12.7",
+      "asdex": "0.5.1",
+      "pet-jax": "0.1.0",
+      "marathon-train": "0.3.0"
+    },
+    "deps": {
+      "asdex": {
+        "sha": "2bbb817eb44fd1c468cd3e7263a9c95f2957e97c",
+        "dirty": false
+      },
+      "pet-jax": {
+        "sha": "b20653c9f013addf89d457281f81ccbda0b2bdab",
+        "dirty": false
+      },
+      "marathon-train": {
+        "sha": "c3165276e78a241538c3a69aeda7d36e3776e4c1",
+        "dirty": false
+      }
+    },
+    "host": {
+      "node": "Marcel's MacBook Pro M3 Max",
+      "machine": "arm64"
+    },
+    "devices": null
+  }
+}

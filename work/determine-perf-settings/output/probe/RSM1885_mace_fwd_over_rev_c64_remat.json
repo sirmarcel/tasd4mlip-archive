@@ -1,0 +1,58 @@
+{
+ "task": "probe",
+ "structure": "RSM1885",
+ "model": "mace",
+ "supercell": "minconv",
+ "mult": [
+  11,
+  3,
+  3
+ ],
+ "n_primitive": 148,
+ "n_atoms": 14652,
+ "n_padded": 14656,
+ "dim": 43968,
+ "n_pairs_padded": 1183648,
+ "padding": "tight",
+ "setup_s": 4.242532872012816,
+ "status": "oom",
+ "provenance": {
+  "git": {
+   "sha": "717d3da845366500af21e1a93b8376a89dde6111",
+   "dirty": false
+  },
+  "versions": {
+   "sadmof": "0.0.0",
+   "jax": "0.10.1",
+   "jaxlib": "0.10.1",
+   "ase": "3.28.0",
+   "e3nn-jax": "0.21.0",
+   "flax": "0.12.7",
+   "asdex": "0.5.1",
+   "pet-jax": "0.1.0",
+   "marathon-train": "0.3.0"
+  },
+  "host": {
+   "node": "kh037",
+   "machine": "x86_64",
+   "slurm": {
+    "cluster_name": "kuma",
+    "job_id": "4090892",
+    "job_partition": "h100"
+   }
+  },
+  "devices": {
+   "platform": "gpu",
+   "kind": "NVIDIA H100",
+   "count": 1
+  }
+ },
+ "mode": "fwd_over_rev",
+ "chunk_size": 64,
+ "remat": true,
+ "n_probe": 128,
+ "oom_where": "device",
+ "error": "JaxRuntimeError('RESOURCE_EXHAUSTED: Failed to get configs for: 28 out of 123 instructions. See logs for all failures. Example failure: \\nAutotuning failed for HLO: %gemm_fusion_dot.575 = f32[1183648,8192,7]{2,1,0} fusion(%bitcast.3318, %bitcast.3290), kind=kCustom, calls=%gemm_fusion_dot.575_computation, metadata={op_name=\"jit(sweep)/while/body/closed_call/vmap(jvp(transpose(jvp(jvp(jvp(jvp(transpose(jvp(jvp(jvp()))))))))))/checkpoint/rematted_computation/MACE.energy/MACE/ijo,...ci,...j->...co/dot_general\" stack_frame_id=308}, backend_config={\"operation_queue_id\":\"0\",\"fusion_backend_config\":{\"kind\":\"__triton_gemm\"},\"force_earliest_schedule\":false,\"reification_cost\":[],\"device_type\":\"DEVICE_TYPE_INVALID\"}. Failed to profile configs: Out of memory while trying to allocate 108.38GiB. [tf-allocator-allocation-error=\\'\\']')",
+ "peak_bytes": 84021464064,
+ "bytes_limit": 94982821105
+}

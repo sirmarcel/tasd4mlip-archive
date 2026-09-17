@@ -1,0 +1,14 @@
+\begin{tabular}{ll rrrr}
+\toprule
+           Model  &            System  &               $N$  &  TF32 (\si{\milli\second}/HVP)  &  fp32 (\si{\milli\second}/HVP)  &     overhead (\%) \\ 
+\midrule
+   \textsc{Mace}  &           MIL-101  &        \num{3604}  &       \num{249.9}  &       \num{322.0}  &          \num{29} \\ 
+                  &           RSM0023  &        \num{3840}  &       \num{317.7}  &       \num{396.9}  &          \num{25} \\ 
+                  &           RSM1831  &        \num{8640}  &      \num{1190.8}  &      \num{1376.6}  &          \num{16} \\ 
+                  &           RSM1885  &       \num{14652}  &      \num{2498.4}  &      \num{2877.5}  &          \num{15} \\ 
+\midrule
+ \textsc{Pet}-XS  &           RSM1831  &        \num{1152}  &         \num{5.8}  &         \num{9.0}  &          \num{55} \\ 
+\midrule
+  \textsc{Pet}-S  &           RSM1831  &        \num{6912}  &       \num{125.3}  &       \num{246.3}  &          \num{97} \\ 
+\bottomrule
+\end{tabular}

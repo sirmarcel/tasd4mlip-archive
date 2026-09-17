@@ -1,0 +1,78 @@
+{
+  "task": "probe",
+  "structure": "mil101",
+  "model": "mace",
+  "supercell": "unit",
+  "mult": [
+    1,
+    1,
+    1
+  ],
+  "n_primitive": 3604,
+  "n_atoms": 3604,
+  "n_padded": 3616,
+  "dim": 10848,
+  "n_pairs_padded": 134272,
+  "padding": "tight",
+  "matmul_precision": "highest",
+  "pet_extra_neighbors": 0,
+  "setup_s": 2.5552840549498796,
+  "status": "ok",
+  "provenance": {
+    "git": {
+      "sha": "d9067e472bc43f967d1db0a4e1469bbbbd3b497c",
+      "dirty": false
+    },
+    "versions": {
+      "sadmof": "0.0.0",
+      "jax": "0.10.1",
+      "jaxlib": "0.10.1",
+      "ase": "3.28.0",
+      "e3nn-jax": "0.21.0",
+      "flax": "0.12.7",
+      "asdex": "0.5.1",
+      "pet-jax": "0.1.0",
+      "marathon-train": "0.3.0"
+    },
+    "deps": {
+      "asdex": {
+        "sha": null,
+        "dirty": null
+      },
+      "pet-jax": {
+        "sha": null,
+        "dirty": null
+      },
+      "marathon-train": {
+        "sha": null,
+        "dirty": null
+      }
+    },
+    "host": {
+      "node": "kh054",
+      "machine": "x86_64",
+      "slurm": {
+        "cluster_name": "kuma",
+        "job_id": "4136834",
+        "job_partition": "h100"
+      }
+    },
+    "devices": {
+      "platform": "gpu",
+      "kind": "NVIDIA H100",
+      "count": 1
+    }
+  },
+  "mode": "fwd_over_rev",
+  "chunk_size": 1,
+  "remat": true,
+  "n_probe": 32,
+  "ms_per_hvp": 321.9678498862777,
+  "ms_per_hvp_raw": 321.573956971406,
+  "fixed_s": -0.012604573275893927,
+  "grad_s": 0.10641979705542326,
+  "sweep_s": 10.290366623084992,
+  "compile_s": 13.692061104811728,
+  "peak_bytes": 15061873664,
+  "bytes_limit": 94982821105
+}

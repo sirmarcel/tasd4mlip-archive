@@ -1,0 +1,71 @@
+{
+ "structure": "RSM1142",
+ "geometry": "../../sources/processed/goennheimer+moosavi/structures.xyz",
+ "model": "mace",
+ "adjacency": {
+  "rc": 6.0,
+  "hops": 4
+ },
+ "provenance": {
+  "git": {
+   "sha": "2aebd9beee7ea8acbf77f43c5962dad7c5fdde8b",
+   "dirty": true
+  },
+  "versions": {
+   "sadmof": "0.0.0",
+   "jax": "0.10.1",
+   "jaxlib": "0.10.1",
+   "ase": "3.28.0",
+   "e3nn-jax": "0.21.0",
+   "flax": "0.12.7",
+   "asdex": "0.3.3",
+   "pet-jax": "0.1.0",
+   "marathon-train": "0.3.0"
+  }
+ },
+ "structure_type": "MOF",
+ "elements": [
+  "C",
+  "Cd",
+  "H",
+  "N",
+  "O"
+ ],
+ "n_atoms": 108,
+ "cell": [
+  [
+   4.43802,
+   0.0,
+   0.0
+  ],
+  [
+   0.004229233298809938,
+   12.666869293968643,
+   0.0
+  ],
+  [
+   -0.015953063534814068,
+   -0.0038090362878102526,
+   26.394544904080206
+  ]
+ ],
+ "widths": [
+  4.438018942138044,
+  12.66686916206975,
+  26.394544904080206
+ ],
+ "volume": 1483.790965883799,
+ "number_density": 0.0727865329303116,
+ "e_max": 5.999343182926223,
+ "K": 4,
+ "R_K": 23.15400307996087,
+ "reach_per_atom": 2881.759259259259,
+ "minconv": [
+  10,
+  4,
+  2
+ ],
+ "minconv_n_atoms": 8640,
+ "minconv_fill": 0.333536951303155,
+ "elapsed_s": 0.4889183749910444
+}

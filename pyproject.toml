@@ -1,0 +1,74 @@
+[project]
+name = "sadmof"
+version = "0.0.0"
+description = "Sparse automatic differentiation for materials/MLIPs"
+readme = "README.md"
+license = "MIT"
+authors = [
+    { name = "Marcel F. Langer" },
+    { name = "Adrian Hill" },
+    { name = "Michele Ceriotti" },
+]
+requires-python = ">=3.11"
+dependencies = [
+    # Pinned to the exact releases the experiments ran with.
+    "asdex==0.5.1",
+    "marathon-train==0.3.0",
+    "pet-jax",
+    "ase",
+    "e3nn-jax",
+    "flax",
+    # jax 0.11.0 NaN-poisons *jitted* second-order AD (eager is fine) — breaks
+    # all Hessian tests; 0.10.x is clean.
+    "jax<0.11",
+    "jaxtyping",
+]
+
+# Figures and tables only (sadmof.tbx). Kept out of the base dependencies so a
+# cluster job never installs a plotting stack: `uv sync --extra plots` locally.
+[project.optional-dependencies]
+plots = ["matplotlib"]
+
+[project.scripts]
+sadmof-relax = "sadmof.scripts.relax:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+# pet-jax has no PyPI release; pinned to the exact upstream revision the
+# experiments ran with.
+[tool.uv.sources]
+pet-jax = { git = "https://github.com/lab-cosmo/pet-jax", rev = "b20653c9f013addf89d457281f81ccbda0b2bdab" }
+
+[tool.ruff]
+line-length = 92
+
+[tool.ruff.lint]
+select = [
+    # pycodestyle
+    "E",
+    # Pyflakes
+    "F",
+    # pyupgrade
+    "UP",
+    # isort
+    "I",
+]
+typing-modules = ["jaxtyping"]
+
+# E501: don't worry about line length (the formatter will take care of it)
+# E741: don't worry about short variable names
+# E731: don't worry about lambdas
+# F722: jaxtyping+ruff problems, see https://github.com/astral-sh/ruff/issues/9860
+# E402: we're ok with importing in arbitrary places (for inline testing and scripts)
+ignore = ["E741", "E731", "F722", "E402", "E501"]
+
+[tool.ruff.lint.isort]
+section-order = ["numpy", "jax", "future", "standard-library", "third-party", "typing", "first-party", "local-folder"]
+no-lines-before = ["jax", "numpy"]
+
+[tool.ruff.lint.isort.sections]
+"numpy" = ["numpy"]
+"jax" = ["jax", "jax.numpy"]
+"typing" = ["jaxtyping", "typing"]

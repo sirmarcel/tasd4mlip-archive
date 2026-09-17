@@ -1,0 +1,33 @@
+{
+  "structure": "sources/processed/goennheimer+moosavi/structures.xyz",
+  "index": "99",
+  "calculator": "pet",
+  "checkpoint": "sources/processed/pet-mad-s",
+  "dtype": "float64",
+  "optimizer": "bfgs",
+  "fmax_target": 0.005,
+  "max_steps": 25000,
+  "num_neighbors": null,
+  "n_atoms": 54,
+  "n_steps": 111,
+  "converged": true,
+  "wall_s": 49.4,
+  "fmax_final": 0.004252,
+  "provenance": {
+    "git": {
+      "sha": "15a8dc4b03bf7ba0897b55cb4bd9036e20f48798",
+      "dirty": false
+    },
+    "versions": {
+      "sadmof": "0.0.0",
+      "jax": "0.10.1",
+      "jaxlib": "0.10.1",
+      "ase": "3.28.0",
+      "e3nn-jax": "0.21.0",
+      "flax": "0.12.7",
+      "asdex": "0.3.3",
+      "pet-jax": "0.1.0",
+      "marathon-train": "0.3.0"
+    }
+  }
+}

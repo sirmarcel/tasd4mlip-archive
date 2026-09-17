@@ -1,0 +1,143 @@
+{
+  "structure": "18150N2",
+  "model": "pet-xs",
+  "mode": "sparse",
+  "hops": 2,
+  "supercell": "minconv",
+  "mult": [
+    2,
+    2,
+    6
+  ],
+  "label": "18150N2_pet-xs_h2",
+  "status": "ok",
+  "config": {
+    "precision": "float32",
+    "matmul_precision": "highest",
+    "ad_mode": "fwd_over_rev",
+    "chunk_size": 1,
+    "remat": true,
+    "padding": "multiples_of_4",
+    "extra_neighbors": 0,
+    "no_shadow": true,
+    "coloring_mode": "fwd_over_rev",
+    "mem_fraction": "0.95",
+    "temperatures_K": [
+      250.0,
+      300.0,
+      350.0,
+      400.0
+    ],
+    "enforce_asr_stored": true
+  },
+  "system": {
+    "n_primitive": 130,
+    "n_atoms": 3120,
+    "n_padded": 3121,
+    "dim": 9363,
+    "n_pairs_padded": 385060,
+    "n_pairs_pattern": 28128,
+    "mass_amu": 40138.56
+  },
+  "sparsity": {
+    "nnz": 799209,
+    "fill": 0.009122287968441814,
+    "fill_padded": 0.009116545820752454,
+    "num_colors": 138,
+    "coloring_cached": true
+  },
+  "hessian": {
+    "n_hvps": 138,
+    "dtype": "float32",
+    "symmetric_by_construction": true,
+    "raw_asymmetry_rel": 0.0,
+    "cached": false,
+    "artifact": "hessian_sparse.npz"
+  },
+  "observables": {
+    "n_modes": 9360,
+    "n_dropped": 154,
+    "n_dropped_asr": 155,
+    "cv_J_per_gK": {
+      "250": 0.7501263711443841,
+      "300": 0.8647596286870948,
+      "350": 0.9694811418738694,
+      "400": 1.0638347677179112
+    },
+    "cv_J_per_gK_asr": {
+      "250": 0.7499206429006455,
+      "300": 0.8645539008750583,
+      "350": 0.9692754268429298,
+      "400": 1.0636290337126573
+    }
+  },
+  "timings": {
+    "import_s": 0.459469024091959,
+    "load_inputs_s": 7.397018673014827,
+    "pattern_s": 0.13769880891777575,
+    "coloring_s": 0.3559950140770525,
+    "hessian_cold_s": 39.63253861898556,
+    "hessian_warm_s": null,
+    "extract_s": 0.026266631088219583,
+    "save_s": 0.010179052944295108,
+    "observables_s": 24.391564436024055,
+    "total_s": 72.72720153804403
+  },
+  "memory": {
+    "peak_bytes": 2063630336,
+    "bytes_limit": 94982821105
+  },
+  "aux_flag": {
+    "kind": "k_sel_overflow",
+    "value": false
+  },
+  "oom_where": null,
+  "requested_bytes": null,
+  "error": null,
+  "provenance": {
+    "git": {
+      "sha": "81e2c02fd310f62e7fd30d0fbbed224bb8923472",
+      "dirty": false
+    },
+    "versions": {
+      "sadmof": "0.0.0",
+      "jax": "0.10.1",
+      "jaxlib": "0.10.1",
+      "ase": "3.28.0",
+      "e3nn-jax": "0.21.0",
+      "flax": "0.12.7",
+      "asdex": "0.5.1",
+      "pet-jax": "0.1.0",
+      "marathon-train": "0.3.0"
+    },
+    "deps": {
+      "asdex": {
+        "sha": null,
+        "dirty": null
+      },
+      "pet-jax": {
+        "sha": null,
+        "dirty": null
+      },
+      "marathon-train": {
+        "sha": null,
+        "dirty": null
+      }
+    },
+    "host": {
+      "node": "kh006",
+      "machine": "x86_64",
+      "slurm": {
+        "cluster_name": "kuma",
+        "job_id": "4159301",
+        "job_partition": "h100"
+      }
+    },
+    "devices": {
+      "platform": "gpu",
+      "kind": "NVIDIA H100",
+      "count": 1,
+      "matmul_precision": "highest"
+    }
+  }
+}

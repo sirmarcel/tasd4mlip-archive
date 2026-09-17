@@ -1,0 +1,58 @@
+{
+ "task": "probe",
+ "structure": "RSM1831",
+ "model": "mace",
+ "supercell": "minconv",
+ "mult": [
+  4,
+  3,
+  5
+ ],
+ "n_primitive": 144,
+ "n_atoms": 8640,
+ "n_padded": 8656,
+ "dim": 25968,
+ "n_pairs_padded": 502688,
+ "padding": "tight",
+ "setup_s": 3.7038854458369315,
+ "status": "oom",
+ "provenance": {
+  "git": {
+   "sha": "717d3da845366500af21e1a93b8376a89dde6111",
+   "dirty": false
+  },
+  "versions": {
+   "sadmof": "0.0.0",
+   "jax": "0.10.1",
+   "jaxlib": "0.10.1",
+   "ase": "3.28.0",
+   "e3nn-jax": "0.21.0",
+   "flax": "0.12.7",
+   "asdex": "0.5.1",
+   "pet-jax": "0.1.0",
+   "marathon-train": "0.3.0"
+  },
+  "host": {
+   "node": "kh036",
+   "machine": "x86_64",
+   "slurm": {
+    "cluster_name": "kuma",
+    "job_id": "4090890",
+    "job_partition": "h100"
+   }
+  },
+  "devices": {
+   "platform": "gpu",
+   "kind": "NVIDIA H100",
+   "count": 1
+  }
+ },
+ "mode": "fwd_over_rev",
+ "chunk_size": 8,
+ "remat": true,
+ "n_probe": 32,
+ "oom_where": "device",
+ "error": "JaxRuntimeError(\"RESOURCE_EXHAUSTED: Out of memory while trying to allocate 268.31GiB. [executable_name='jit_sweep'] [tf-allocator-allocation-error='']\")",
+ "peak_bytes": 85197694976,
+ "bytes_limit": 94982821105
+}

@@ -1,0 +1,22 @@
+\begin{tabular}{ll rrrr}
+\toprule
+        Ablation  &             Model  &  med.\ $|\delta C_V|$ (\%)  &  max $|\delta C_V|$ (\%)  &  max $|\Delta\nu|$ (cm$^{-1}$)  &  med.\ $\lVert\Delta\hess\rVert_F / \lVert\hess\rVert_F$ \\ 
+\midrule
+fp32 (full matmuls)  &     \textsc{Mace}  &     \num{6.9e-06}  &     \num{3.6e-05}  &       \num{0.019}  &     \num{1.8e-06} \\ 
+                  &   \textsc{Pet}-XS  &     \num{4.7e-05}  &     \num{2.4e-02}  &         \num{4.1}  &     \num{2.6e-06} \\ 
+                  &    \textsc{Pet}-S  &     \num{3.3e-05}  &     \num{9.1e-04}  &        \num{0.14}  &     \num{2.1e-06} \\ 
+\midrule
+fp32 (TF32 matmuls)  &     \textsc{Mace}  &       \num{0.010}  &         \num{3.0}  &          \num{51}  &     \num{5.3e-03} \\ 
+                  &   \textsc{Pet}-XS  &       \num{0.029}  &         \num{3.0}  &         \num{112}  &     \num{4.9e-03} \\ 
+                  &    \textsc{Pet}-S  &       \num{0.015}  &         \num{1.6}  &          \num{26}  &     \num{3.4e-03} \\ 
+\midrule
+           no D3  &     \textsc{Mace}  &       \num{0.056}  &         \num{2.9}  &          \num{67}  &     \num{3.6e-03} \\ 
+\midrule
+no adaptive-cutoff forces  &   \textsc{Pet}-XS  &        \num{0.12}  &         \num{2.5}  &         \num{377}  &     \num{7.0e-03} \\ 
+                  &    \textsc{Pet}-S  &       \num{0.035}  &         \num{1.4}  &          \num{23}  &     \num{1.9e-03} \\ 
+\midrule
+            fp32  &     \textsc{Mace}  &       \num{0.056}  &         \num{2.9}  &          \num{67}  &     \num{3.6e-03} \\ 
+         + no D3  &   \textsc{Pet}-XS  &        \num{0.12}  &         \num{2.5}  &         \num{374}  &     \num{7.0e-03} \\ 
++ no adaptive-cutoff forces  &    \textsc{Pet}-S  &       \num{0.035}  &         \num{1.4}  &          \num{23}  &     \num{1.9e-03} \\ 
+\bottomrule
+\end{tabular}

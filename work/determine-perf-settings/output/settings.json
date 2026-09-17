@@ -1,0 +1,13 @@
+{
+ "mode": "fwd_over_rev",
+ "chunk_size": 1,
+ "remat": true,
+ "precision": "float32",
+ "headroom": 1.0,
+ "feasible_chunks": [
+  1
+ ],
+ "ms_per_hvp_at_median": 1188.29,
+ "padding": "tight",
+ "device": "NVIDIA H100"
+}

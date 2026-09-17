@@ -1,0 +1,47 @@
+{
+  "structure": "sources/processed/big-mofs/structures.xyz",
+  "index": "1",
+  "calculator": "pet",
+  "checkpoint": "sources/processed/pet-mad-s",
+  "dtype": "float64",
+  "optimizer": "lbfgs-ls",
+  "fmax_target": 0.005,
+  "max_steps": 25000,
+  "num_neighbors": null,
+  "n_atoms": 1854,
+  "n_steps": 1897,
+  "converged": true,
+  "wall_s": 234.4,
+  "fmax_final": 0.004866,
+  "provenance": {
+    "git": {
+      "sha": "275a0988a5cc55f551e8476a708cf99aa1851d6d",
+      "dirty": false
+    },
+    "versions": {
+      "sadmof": "0.0.0",
+      "jax": "0.10.1",
+      "jaxlib": "0.10.1",
+      "ase": "3.28.0",
+      "e3nn-jax": "0.21.0",
+      "flax": "0.12.7",
+      "asdex": "0.5.1",
+      "pet-jax": "0.1.0",
+      "marathon-train": "0.3.0"
+    },
+    "host": {
+      "node": "kh034",
+      "machine": "x86_64",
+      "slurm": {
+        "cluster_name": "kuma",
+        "job_id": "4097765",
+        "job_partition": "h100"
+      }
+    },
+    "devices": {
+      "platform": "gpu",
+      "kind": "NVIDIA H100",
+      "count": 1
+    }
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "structure": "mof177",
+  "model": "pet-xs",
+  "K": 5,
+  "config": {
+    "precision": "float32",
+    "matmul_precision": "highest",
+    "ad_mode": "fwd_over_rev",
+    "chunk_size": 1,
+    "remat": true,
+    "padding": "multiples_of_4",
+    "no_shadow": true
+  },
+  "system": {
+    "n_atoms": 808,
+    "n_padded": 809,
+    "dim": 2424
+  },
+  "rungs": {
+    "1": {
+      "num_colors": 42,
+      "fill": 0.01249386918795198
+    },
+    "2": {
+      "num_colors": 153,
+      "fill": 0.03321257607172706
+    },
+    "3": {
+      "num_colors": 192,
+      "fill": 0.06325775690967346
+    },
+    "4": {
+      "num_colors": 453,
+      "fill": 0.10305723160794583
+    },
+    "5": {
+      "num_colors": 750,
+      "fill": 0.15417559868048117
+    }
+  },
+  "provenance": {
+    "git": {
+      "sha": "2f50528a11816f3c62b1c2fefcc756c8c0a9ce05",
+      "dirty": true
+    },
+    "versions": {
+      "sadmof": "0.0.0",
+      "jax": "0.10.1",
+      "jaxlib": "0.10.1",
+      "ase": "3.28.0",
+      "e3nn-jax": "0.21.0",
+      "flax": "0.12.7",
+      "asdex": "0.5.1",
+      "pet-jax": "0.1.0",
+      "marathon-train": "0.3.0"
+    },
+    "deps": {
+      "asdex": {
+        "sha": "2bbb817eb44fd1c468cd3e7263a9c95f2957e97c",
+        "dirty": false
+      },
+      "pet-jax": {
+        "sha": "b20653c9f013addf89d457281f81ccbda0b2bdab",
+        "dirty": false
+      },
+      "marathon-train": {
+        "sha": "c3165276e78a241538c3a69aeda7d36e3776e4c1",
+        "dirty": false
+      }
+    },
+    "host": {
+      "node": "Marcel's MacBook Pro M3 Max",
+      "machine": "arm64"
+    },
+    "devices": {
+      "platform": "cpu",
+      "kind": "cpu",
+      "count": 1,
+      "matmul_precision": "highest"
+    }
+  }
+}

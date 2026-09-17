@@ -1,0 +1,116 @@
+{
+  "structure": "RSM1876",
+  "model": "mace",
+  "dtype": "float32",
+  "shadow": null,
+  "label": "RSM1876_mace_fp32+d3",
+  "status": "ok",
+  "config": {
+    "ad_mode": "fwd_over_rev",
+    "chunk_size": 1,
+    "remat": true,
+    "padding": "multiples_of_4",
+    "extra_neighbors": null,
+    "mem_fraction": "0.95",
+    "temperatures_K": [
+      250.0,
+      300.0,
+      350.0,
+      400.0
+    ],
+    "enforce_asr_stored": true
+  },
+  "system": {
+    "n_atoms": 147,
+    "n_padded": 152,
+    "dim": 456,
+    "n_pairs_padded": 5588,
+    "mass_amu": 1654.3709999999996
+  },
+  "hessian": {
+    "n_hvps": null,
+    "dtype": "float64",
+    "combined": true,
+    "raw_asymmetry_rel": 0.0001778007308024116,
+    "cached": null,
+    "artifact": null
+  },
+  "observables": {
+    "n_modes": 441,
+    "n_dropped": 4,
+    "n_dropped_asr": 4,
+    "cv_J_per_gK": {
+      "250": 0.8300911593893214,
+      "300": 0.9587059172909106,
+      "350": 1.0777257162853027,
+      "400": 1.1849865648512887
+    },
+    "cv_J_per_gK_asr": {
+      "250": 0.8300911457043352,
+      "300": 0.9587058989159608,
+      "350": 1.0777256968576419,
+      "400": 1.1849865462663833
+    }
+  },
+  "timings": {
+    "import_s": null,
+    "load_inputs_s": null,
+    "hessian_cold_s": null,
+    "hessian_warm_s": null,
+    "extract_s": null,
+    "save_s": null,
+    "observables_s": 0.012683459557592869,
+    "total_s": 0.44525913801044226,
+    "load_s": 0.002481936477124691
+  },
+  "memory": null,
+  "aux_flag": null,
+  "oom_where": null,
+  "requested_bytes": null,
+  "error": null,
+  "sources": {
+    "mlip": "RSM1876_mace_fp32",
+    "d3": "RSM1876_d3"
+  },
+  "provenance": {
+    "git": {
+      "sha": "6e8eacd5161f2ebf649f85235dab6b56e77c203e",
+      "dirty": false
+    },
+    "versions": {
+      "sadmof": "0.0.0",
+      "jax": "0.10.1",
+      "jaxlib": "0.10.1",
+      "ase": "3.28.0",
+      "e3nn-jax": "0.21.0",
+      "flax": "0.12.7",
+      "asdex": "0.5.1",
+      "pet-jax": "0.1.0",
+      "marathon-train": "0.3.0"
+    },
+    "deps": {
+      "asdex": {
+        "sha": null,
+        "dirty": null
+      },
+      "pet-jax": {
+        "sha": null,
+        "dirty": null
+      },
+      "marathon-train": {
+        "sha": null,
+        "dirty": null
+      }
+    },
+    "host": {
+      "node": "kh063",
+      "machine": "x86_64",
+      "slurm": {
+        "cluster_name": "kuma",
+        "job_id": "4130899",
+        "job_partition": "mig24gb"
+      }
+    },
+    "devices": null
+  }
+}

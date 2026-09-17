@@ -1,0 +1,13 @@
+{
+  "repo": {
+    "sha": "1990fa8d5229896a0905532d31f3b4e893c2f29c",
+    "dirty": false,
+    "dirty_files": 0
+  },
+  "deps": {
+    "asdex": {"sha": "2bbb817eb44fd1c468cd3e7263a9c95f2957e97c", "tag": "v0.5.1", "repo": "https://github.com/adrhill/asdex"},
+    "pet-jax": {"sha": "b20653c9f013addf89d457281f81ccbda0b2bdab", "repo": "https://github.com/lab-cosmo/pet-jax"},
+    "marathon": {"sha": "c3165276e78a241538c3a69aeda7d36e3776e4c1", "tag": "v0.3.0", "repo": "https://github.com/sirmarcel/marathon"}
+  },
+  "assembled": "2026-09-17T13:42:11Z"
+}

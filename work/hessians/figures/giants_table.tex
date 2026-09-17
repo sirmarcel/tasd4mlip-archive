@@ -1,0 +1,25 @@
+\begin{tabular}{llrr rrrr>{\columncolor{exactshade}}r rrrr>{\columncolor{exactshade}}r}
+\toprule
+& & & dense & \multicolumn{5}{c}{Speedup over dense} & \multicolumn{5}{c}{$\delta C_V$ (\textperthousand)} \\
+\cmidrule(lr){5-9} \cmidrule(lr){10-14}
+& & & & \multicolumn{4}{c}{truncated} & exact & \multicolumn{4}{c}{truncated} & exact \\
+\cmidrule(lr){5-8} \cmidrule(lr){9-9} \cmidrule(lr){10-13} \cmidrule(lr){14-14}
+       Structure  &             Model  &               $N$  &    (\si{\second})  &           $k{=}1$  &           $k{=}2$  &           $k{=}3$  &           $k{=}4$  &               $K$  &           $k{=}1$  &           $k{=}2$  &           $k{=}3$  &           $k{=}4$  &               $K$ \\ 
+\midrule
+         MIL-101  &     \textsc{Mace}  &        \num{3604}  &        \num{3529}  &        \num{36.5}  &        \num{13.3}  &         \num{5.9}  &                --  &         \num{2.7}  &      \num{-20.77}  &       \num{-0.18}  &       \num{<0.01}  &                --  &       \num{<0.01} \\ 
+                  &   \textsc{Pet}-XS  &        \num{3604}  &         \num{316}  &         \num{8.9}  &         \num{8.5}  &         \num{7.3}  &         \num{6.3}  &         \num{5.3}  &     \num{-109.50}  &      \num{-15.09}  &       \num{<0.01}  &       \num{<0.01}  &       \num{<0.01} \\ 
+                  &    \textsc{Pet}-S  &        \num{3604}  &        \num{1248}  &        \num{23.9}  &        \num{16.6}  &        \num{11.1}  &         \num{7.5}  &         \num{1.9}  &      \num{-55.58}  &       \num{-0.22}  &       \num{<0.01}  &       \num{<0.01}  &       \num{<0.01} \\ 
+\midrule
+         MIL-100  &     \textsc{Mace}  &        \num{2788}  &        \num{1246}  &        \num{18.6}  &         \num{7.5}  &         \num{3.1}  &                --  &         \num{1.3}  &       \num{-7.71}  &       \num{<0.01}  &       \num{<0.01}  &                --  &       \num{<0.01} \\ 
+                  &   \textsc{Pet}-XS  &        \num{2788}  &         \num{227}  &         \num{6.3}  &         \num{5.9}  &         \num{5.2}  &         \num{4.4}  &         \num{3.6}  &      \num{-87.99}  &       \num{-5.60}  &       \num{<0.01}  &       \num{<0.01}  &       \num{<0.01} \\ 
+                  &    \textsc{Pet}-S  &        \num{2788}  &         \num{876}  &        \num{16.8}  &        \num{11.5}  &         \num{7.7}  &         \num{5.0}  &         \num{1.2}  &      \num{-24.81}  &        \num{0.03}  &       \num{<0.01}  &       \num{<0.01}  &       \num{<0.01} \\ 
+\midrule
+         MOF-210  &     \textsc{Mace}  &        \num{1854}  &         \num{555}  &        \num{10.9}  &         \num{8.0}  &         \num{5.1}  &                --  &         \num{2.6}  &      \num{-32.40}  &       \num{-0.39}  &       \num{<0.01}  &                --  &       \num{<0.01} \\ 
+                  &   \textsc{Pet}-XS  &        \num{1854}  &         \num{111}  &         \num{3.3}  &         \num{3.2}  &         \num{3.0}  &         \num{3.0}  &         \num{2.7}  &     \num{-127.99}  &      \num{-51.02}  &       \num{-8.55}  &       \num{<0.01}  &       \num{<0.01} \\ 
+                  &    \textsc{Pet}-S  &        \num{1854}  &         \num{379}  &         \num{8.0}  &         \num{6.6}  &         \num{5.4}  &         \num{4.3}  &         \num{1.5}  &      \num{-76.44}  &      \num{-14.13}  &       \num{<0.01}  &       \num{<0.01}  &       \num{<0.01} \\ 
+\midrule
+         MOF-177  &     \textsc{Mace}  &        \num{6464}  &        \num{9431}  &        \num{80.5}  &        \num{30.2}  &        \num{14.3}  &                --  &         \num{5.6}  &      \num{-26.28}  &       \num{<0.01}  &       \num{<0.01}  &                --  &       \num{<0.01} \\ 
+                  &   \textsc{Pet}-XS  &         \num{808}  &          \num{48}  &         \num{1.5}  &         \num{1.4}  &         \num{1.4}  &         \num{1.4}  &         \num{1.3}  &     \num{-126.79}  &      \num{-39.20}  &       \num{-7.21}  &       \num{<0.01}  &       \num{<0.01} \\ 
+                  &    \textsc{Pet}-S  &        \num{6464}  &        \num{3900}  &        \num{67.1}  &        \num{46.4}  &        \num{23.4}  &        \num{15.4}  &         \num{3.2}  &      \num{-66.16}  &       \num{-7.37}  &       \num{<0.01}  &       \num{<0.01}  &       \num{<0.01} \\ 
+\bottomrule
+\end{tabular}

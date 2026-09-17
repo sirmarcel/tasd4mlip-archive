@@ -1,0 +1,123 @@
+{
+  "structure": "mil101",
+  "model": "mace",
+  "source_label": "mil101_mace_dense",
+  "n_atoms": 3604,
+  "n_primitive": 3604,
+  "mult": [
+    1,
+    1,
+    1
+  ],
+  "exact_hops": 4,
+  "reach_radii_A": [
+    5.999963905495093,
+    11.957334275566764,
+    17.657807567489627,
+    23.24292052738712
+  ],
+  "cell_A": [
+    [
+      62.94257289067072,
+      0.011956930436126403,
+      -0.003472419881085999
+    ],
+    [
+      31.4816424220938,
+      54.495597450846674,
+      -0.01543350732098046
+    ],
+    [
+      31.471902315459463,
+      18.156270943115107,
+      51.39556289143797
+    ]
+  ],
+  "hessian_dtype": "float32",
+  "dist_bin_A": 0.1,
+  "lognorm_bin": 0.05,
+  "pair_count": [
+    3604,
+    134268,
+    358216,
+    690020,
+    1109580
+  ],
+  "nonzero_count": [
+    3604,
+    134268,
+    358216,
+    690020,
+    1105323
+  ],
+  "norm_max": [
+    80.29928476652256,
+    40.27979314994356,
+    0.3685523244825498,
+    0.005407703223682957,
+    2.934919579827688e-05
+  ],
+  "dist_max_nonzero_A": [
+    0.0,
+    5.999963760375977,
+    11.957334518432617,
+    17.657808303833008,
+    23.242919921875
+  ],
+  "beyond_pairs": 10693128,
+  "beyond_nonzero": 0,
+  "beyond_max_norm": 0.0,
+  "n_clipped_low": 469877,
+  "n_clipped_high": 0,
+  "timings_s": {
+    "coupled_maps": 1.36,
+    "histogram": 1.98,
+    "total": 4.66
+  },
+  "provenance": {
+    "git": {
+      "sha": "f0c0d51f9fe1a3ea2c75421c51e06f4df4755d4e",
+      "dirty": true
+    },
+    "versions": {
+      "sadmof": "0.0.0",
+      "jax": "0.10.1",
+      "jaxlib": "0.10.1",
+      "ase": "3.28.0",
+      "e3nn-jax": "0.21.0",
+      "flax": "0.12.7",
+      "asdex": "0.5.1",
+      "pet-jax": "0.1.0",
+      "marathon-train": "0.3.0"
+    },
+    "deps": {
+      "asdex": {
+        "sha": null,
+        "dirty": null
+      },
+      "pet-jax": {
+        "sha": null,
+        "dirty": null
+      },
+      "marathon-train": {
+        "sha": null,
+        "dirty": null
+      }
+    },
+    "host": {
+      "node": "kh064",
+      "machine": "x86_64",
+      "slurm": {
+        "cluster_name": "kuma",
+        "job_id": "4162411",
+        "job_partition": "mig24gb"
+      }
+    },
+    "devices": {
+      "platform": "gpu",
+      "kind": "NVIDIA H100 MIG 2g.24gb",
+      "count": 1,
+      "matmul_precision": "default"
+    }
+  }
+}

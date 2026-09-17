@@ -1,0 +1,80 @@
+{
+  "model_id": "UMA-S-1.2",
+  "cutoff": 6.0,
+  "lmax": 2,
+  "mmax": 2,
+  "num_layers": 4,
+  "sphere_channels": 128,
+  "hidden_channels": 128,
+  "edge_channels": 128,
+  "num_distance_basis": 32,
+  "max_num_elements": 100,
+  "max_neighbors": 300,
+  "num_experts": 64,
+  "envelope_exponent": 5,
+  "edge_degree_rescale_factor": 5.0,
+  "gaussian_basis_width": 2.0,
+  "norm_eps": 1e-05,
+  "charge_channel_start": 0,
+  "charge_channel_end": 3,
+  "spin_channel_start": 0,
+  "spin_channel_end": 0,
+  "composition_include_self": true,
+  "backbone_datasets": [
+    "oc20",
+    "oc22",
+    "oc25",
+    "odac",
+    "omat",
+    "omc",
+    "omol"
+  ],
+  "head_datasets": [
+    "oc20",
+    "oc22",
+    "oc25",
+    "odac",
+    "omat",
+    "omc",
+    "omol"
+  ],
+  "head_dataset_to_expert": {
+    "oc20": 0,
+    "oc22": 1,
+    "oc25": 2,
+    "odac": 3,
+    "omat": 4,
+    "omc": 5,
+    "omol": 6
+  },
+  "normalizers": {
+    "omc": {
+      "mean": 0.0,
+      "rmsd": 1.3420000076293945
+    },
+    "omol": {
+      "mean": 0.0,
+      "rmsd": 1.3420000076293945
+    },
+    "odac": {
+      "mean": 0.0,
+      "rmsd": 1.3420000076293945
+    },
+    "oc20": {
+      "mean": 0.0,
+      "rmsd": 1.3420000076293945
+    },
+    "omat": {
+      "mean": 0.0,
+      "rmsd": 1.3420000076293945
+    },
+    "oc22": {
+      "mean": 0.0,
+      "rmsd": 1.3420000076293945
+    },
+    "oc25": {
+      "mean": 0.0,
+      "rmsd": 1.3420000076293945
+    }
+  }
+}

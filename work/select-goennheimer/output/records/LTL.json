@@ -1,0 +1,68 @@
+{
+ "structure": "LTL",
+ "geometry": "../../sources/processed/goennheimer+moosavi/structures.xyz",
+ "model": "mace",
+ "adjacency": {
+  "rc": 6.0,
+  "hops": 4
+ },
+ "provenance": {
+  "git": {
+   "sha": "2aebd9beee7ea8acbf77f43c5962dad7c5fdde8b",
+   "dirty": true
+  },
+  "versions": {
+   "sadmof": "0.0.0",
+   "jax": "0.10.1",
+   "jaxlib": "0.10.1",
+   "ase": "3.28.0",
+   "e3nn-jax": "0.21.0",
+   "flax": "0.12.7",
+   "asdex": "0.3.3",
+   "pet-jax": "0.1.0",
+   "marathon-train": "0.3.0"
+  }
+ },
+ "structure_type": "zeolite",
+ "elements": [
+  "O",
+  "Si"
+ ],
+ "n_atoms": 108,
+ "cell": [
+  [
+   18.20497,
+   0.0,
+   0.0
+  ],
+  [
+   -9.101651228156047,
+   15.76644784413742,
+   0.0
+  ],
+  [
+   0.0,
+   0.0,
+   7.43754
+  ]
+ ],
+ "widths": [
+  15.766447844137423,
+  15.766447844137423,
+  7.437539999999999
+ ],
+ "volume": 2134.7800743009807,
+ "number_density": 0.050590691425374985,
+ "e_max": 5.9986526834436,
+ "K": 4,
+ "R_K": 22.51300746606494,
+ "reach_per_atom": 1816.2777777777778,
+ "minconv": [
+  3,
+  3,
+  7
+ ],
+ "minconv_n_atoms": 6804,
+ "minconv_fill": 0.2669426481154876,
+ "elapsed_s": 0.2625085830222815
+}

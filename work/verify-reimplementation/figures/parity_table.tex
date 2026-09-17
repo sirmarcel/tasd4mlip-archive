@@ -1,0 +1,20 @@
+\begin{tabular}{ll rrr}
+\toprule
+                             Model  &                          Prediction  &                $\Delta E$ (eV/atom)  &                 $\Delta F$ (eV/\AA)  &        $\Delta \sigma$ (eV/\AA$^3$) \\ 
+\midrule
+                     \textsc{Mace}  &                       \torch{} fp32  &       \num{3.3e-06} (\num{5.4e-06})  &       \num{4.0e-05} (\num{8.4e-05})  &       \num{5.5e-08} (\num{2.0e-07}) \\ 
+                                    &                         \jax{} fp64  &       \num{1.2e-08} (\num{3.0e-08})  &       \num{3.6e-07} (\num{6.1e-07})  &       \num{5.9e-09} (\num{1.7e-08}) \\ 
+                                    &                         \jax{} fp32  &       \num{1.0e-07} (\num{3.7e-07})  &       \num{4.0e-05} (\num{8.4e-05})  &       \num{5.5e-08} (\num{1.8e-07}) \\ 
+                                    &                   \jax{} fp32, TF32  &       \num{8.3e-05} (\num{5.0e-04})  &       \num{2.9e-01} (\num{6.4e-01})  &       \num{4.5e-04} (\num{1.1e-03}) \\ 
+\midrule
+                   \textsc{Pet}-XS  &                       \torch{} fp32  &       \num{2.1e-06} (\num{7.1e-06})  &       \num{4.1e-05} (\num{9.0e-05})  &       \num{6.4e-08} (\num{2.2e-07}) \\ 
+                                    &                         \jax{} fp64  &       \num{9.8e-07} (\num{2.1e-06})  &       \num{8.0e-06} (\num{2.3e-05})  &       \num{6.4e-08} (\num{2.0e-07}) \\ 
+                                    &                         \jax{} fp32  &       \num{1.1e-06} (\num{2.3e-06})  &       \num{4.4e-05} (\num{5.6e-04})  &       \num{1.2e-07} (\num{7.1e-07}) \\ 
+                                    &                   \jax{} fp32, TF32  &       \num{4.8e-04} (\num{1.0e-03})  &       \num{3.2e-01} (\num{6.5e-01})  &       \num{4.6e-04} (\num{1.2e-03}) \\ 
+\midrule
+                    \textsc{Pet}-S  &                       \torch{} fp32  &       \num{2.0e-06} (\num{7.2e-06})  &       \num{4.3e-05} (\num{8.8e-05})  &       \num{5.7e-08} (\num{1.9e-07}) \\ 
+                                    &                         \jax{} fp64  &       \num{2.4e-07} (\num{4.6e-07})  &       \num{2.6e-06} (\num{4.8e-06})  &       \num{2.5e-08} (\num{8.0e-08}) \\ 
+                                    &                         \jax{} fp32  &       \num{8.1e-08} (\num{2.8e-07})  &       \num{4.4e-05} (\num{8.6e-05})  &       \num{7.5e-08} (\num{2.3e-07}) \\ 
+                                    &                   \jax{} fp32, TF32  &       \num{1.5e-04} (\num{6.0e-04})  &       \num{3.2e-01} (\num{6.7e-01})  &       \num{4.6e-04} (\num{1.2e-03}) \\ 
+\bottomrule
+\end{tabular}

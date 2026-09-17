@@ -1,0 +1,110 @@
+{
+  "stack": "jax",
+  "model": "pet-xs",
+  "dtype": "float32",
+  "device": "gpu",
+  "matmul_precision": "high",
+  "jax_device": "gpu",
+  "checkpoint": "pet-mad-xs",
+  "skin": 0.5,
+  "no_shadow": false,
+  "structures": [
+    "RSM0274",
+    "RSM1876",
+    "RSM0047",
+    "20561N3",
+    "RSM0010",
+    "RSM1885",
+    "VFI",
+    "RSM1877",
+    "RSM0023",
+    "RSM1162",
+    "RSM0254",
+    "RSM0116",
+    "RSM0622",
+    "18150N2",
+    "RSM0430",
+    "RSM0814",
+    "NPT",
+    "RSM0011",
+    "RSM1831",
+    "RSM0123",
+    "RSM0230",
+    "RSM0080",
+    "RSM0183",
+    "19000N3",
+    "RSM1618",
+    "RSM0317",
+    "AFI",
+    "RSM1751",
+    "RSM0246",
+    "RSM1175",
+    "RSM1870",
+    "RSM0516",
+    "RSM0089",
+    "13181N3",
+    "RSM0456",
+    "RSM1250",
+    "SAS",
+    "RSM0113",
+    "RSM0122",
+    "RSM0998",
+    "RSM0777",
+    "RSM0249",
+    "RSM0210",
+    "13180N3",
+    "RSM1869",
+    "RSM0020",
+    "RWY",
+    "RSM0992",
+    "RSM0043",
+    "RSM1823"
+  ],
+  "computed": 50,
+  "seconds": 1468.6859679222107,
+  "provenance": {
+    "git": {
+      "sha": "4e2ab579751d523b0fb5e80963170888cdd45a23",
+      "dirty": false
+    },
+    "versions": {
+      "sadmof": "0.0.0",
+      "jax": "0.10.1",
+      "jaxlib": "0.10.1",
+      "ase": "3.28.0",
+      "e3nn-jax": "0.21.0",
+      "flax": "0.12.7",
+      "asdex": "0.5.1",
+      "pet-jax": "0.1.0",
+      "marathon-train": "0.3.0"
+    },
+    "deps": {
+      "asdex": {
+        "sha": null,
+        "dirty": null
+      },
+      "pet-jax": {
+        "sha": null,
+        "dirty": null
+      },
+      "marathon-train": {
+        "sha": null,
+        "dirty": null
+      }
+    },
+    "host": {
+      "node": "kh008",
+      "machine": "x86_64",
+      "slurm": {
+        "cluster_name": "kuma",
+        "job_id": "4143649",
+        "job_partition": "h100"
+      }
+    },
+    "devices": {
+      "platform": "gpu",
+      "kind": "NVIDIA H100",
+      "count": 1
+    }
+  }
+}

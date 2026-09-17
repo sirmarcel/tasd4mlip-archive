@@ -1,0 +1,58 @@
+{
+ "task": "probe",
+ "structure": "RSM1831",
+ "model": "mace",
+ "supercell": "minconv",
+ "mult": [
+  4,
+  3,
+  5
+ ],
+ "n_primitive": 144,
+ "n_atoms": 8640,
+ "n_padded": 8656,
+ "dim": 25968,
+ "n_pairs_padded": 502688,
+ "padding": "tight",
+ "setup_s": 3.811420808080584,
+ "status": "oom",
+ "provenance": {
+  "git": {
+   "sha": "717d3da845366500af21e1a93b8376a89dde6111",
+   "dirty": false
+  },
+  "versions": {
+   "sadmof": "0.0.0",
+   "jax": "0.10.1",
+   "jaxlib": "0.10.1",
+   "ase": "3.28.0",
+   "e3nn-jax": "0.21.0",
+   "flax": "0.12.7",
+   "asdex": "0.5.1",
+   "pet-jax": "0.1.0",
+   "marathon-train": "0.3.0"
+  },
+  "host": {
+   "node": "kh036",
+   "machine": "x86_64",
+   "slurm": {
+    "cluster_name": "kuma",
+    "job_id": "4090891",
+    "job_partition": "h100"
+   }
+  },
+  "devices": {
+   "platform": "gpu",
+   "kind": "NVIDIA H100",
+   "count": 1
+  }
+ },
+ "mode": "fwd_over_rev",
+ "chunk_size": 16,
+ "remat": true,
+ "n_probe": 32,
+ "oom_where": "device",
+ "error": "JaxRuntimeError('INTERNAL: Failed to get configs for: 2 out of 112 instructions. See logs for all failures. Example failure: \\nAutotuning failed for HLO: %gemm_fusion_dot.652 = f32[17727488,816]{1,0} fusion(%bitcast.3510, %bitcast.3497), kind=kCustom, calls=%gemm_fusion_dot.652_computation, metadata={op_name=\"jit(sweep)/while/body/closed_call/vmap(jvp(transpose(jvp(jvp(jvp(jvp(transpose(jvp(jvp(jvp()))))))))))/checkpoint/MACE.energy/MACE/symmetric_contraction_0/vwxik,bkc,bci->bcvwx/dot_general\" stack_frame_id=414}, backend_config={\"operation_queue_id\":\"0\",\"fusion_backend_config\":{\"kind\":\"__triton_gemm\"},\"force_earliest_schedule\":false,\"reification_cost\":[],\"device_type\":\"DEVICE_TYPE_INVALID\"}. Failed to pick best config: All configs failed during profiling.\\nFailures (22):\\nCOMPILATION FAILED: RESOURCE_EXHAUSTED: Discarding compilation due to register spilling.\\nCOMPILATION FAILED: RESOURCE_EXHAUSTED: Discarding compilation due to register spilling.\\nCOMPILATION FAILED: RESOURCE_EXHAUSTED: Discarding compilation due to register spilling.\\nCOMPILATION FAILED: RESOURCE_EXHAUSTED: Compilation failed: Shared memory size limit exceeded: requested 262144, available: 232448, context: [Fusion: gemm_fusion_dot.652 = f32[17727488,816]{1,0} fusion(bitcast.3510, bitcast.3497), kind=kCustom, calls=gemm_fusion_dot.652_computation.clone, backend_config={\"operation_queue_id\":\"0\",\"fusion_backend_config\":{\"kind\":\"__triton_nested_gemm_fusion\",\"block_level_fusion_config\":{\"num_warps\":\"8\",\"output_tiles\":[{\"sizes\":[\"128\",\"256\"]}],\"num_ctas\":1,\"num_stages\":3,\"is_tma_allowed\":false,\"is_warp_specialization_allowed\":false,\"waves_per_eu\":0}},\"force_earliest_schedule\":false,\"reification_cost\":[],\"device_type\":\"DEVICE_TYPE_INVALID\"}Computation: gemm_fusion_dot.652_computation.clone {\\n  parameter_0.153 = f32[17727488,768]{1,0} parameter(0)\\n  parameter_1.153 = f32[768,816]{1,0} parameter(1)\\n  ROOT dot.954 = f32[17727488,816]{1,0} dot(parameter_0.153, parameter_1.153), lhs_contracting_dims={1},",
+ "peak_bytes": 86581995520,
+ "bytes_limit": 94982821105
+}

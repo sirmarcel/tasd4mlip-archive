@@ -1,0 +1,12 @@
+sadmof.models.mace.model.MACE:
+  atomic_inter_scale: 0.8041538754478097
+  atomic_inter_shift: 0.16409696359187365
+  avg_num_neighbors: 61.964672446250916
+  correlation: 3
+  cutoff: 6.0
+  hidden_irreps_str: 128x0e+128x1o
+  max_ell: 3
+  num_bessel: 10
+  num_elements: 95
+  num_interactions: 2
+  num_polynomial_cutoff: 5
