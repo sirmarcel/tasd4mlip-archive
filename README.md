@@ -1,6 +1,6 @@
 # tasd4mlip: code and data archive
 
-Code and data for the preprint *Truncated automatic sparse differentiation for machine learning interatomic potentials* by Marcel F. Langer, Adrian Hill, and Michele Ceriotti (arXiv, 2026). The archive contains the `sadmof` Python package, every experiment behind a figure, table, or number in the preprint (run scripts, extracted results, figures, and raw run records), and the processed external inputs the experiments read. (Note: `sadmof` was the previous codename for this project, we keep it to avoid a bulk rename at this point. We will rename it later.)
+Code and data for the preprint [*Truncated automatic sparse differentiation for machine learning interatomic potentials*](https://marcel.science/tasd4mlip) by Marcel F. Langer, Adrian Hill, and Michele Ceriotti, [arXiv:2609.20510](https://arxiv.org/abs/2609.20510) (2026). The archive contains the `sadmof` Python package, every experiment behind a figure, table, or number in the preprint (run scripts, extracted results, figures, and raw run records), and the processed external inputs the experiments read. (Note: `sadmof` was the previous codename for this project, we keep it to avoid a bulk rename at this point. We will rename it later.)
 
 Published on Zenodo at [doi:10.5281/zenodo.22813524](https://doi.org/10.5281/zenodo.22813524) and mirrored at [github.com/sirmarcel/tasd4mlip-archive](https://github.com/sirmarcel/tasd4mlip-archive). The GitHub mirror keeps the binary data in Git LFS, so a full clone downloads about 180 MB of LFS objects. `GIT_LFS_SKIP_SMUDGE=1 git clone ...` fetches the code, structures, and JSON records only.
 
@@ -87,7 +87,7 @@ cd work/hessians && uv run --extra plots python ladder_figure.py   # writes figu
 
 ## Citing
 
-Please cite the preprint. The Zenodo record has its own DOI for citing the archive itself.
+Please cite the preprint: M. F. Langer, A. Hill, M. Ceriotti, *Truncated automatic sparse differentiation for machine learning interatomic potentials*, arXiv:2609.20510 (2026). The Zenodo record has its own DOI, `10.5281/zenodo.22813524`, for citing the archive itself.
 
 ## License
 

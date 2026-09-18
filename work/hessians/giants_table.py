@@ -77,12 +77,12 @@ def table(ladders, out="figures/giants_table.tex"):
         blocks.append(block)
 
     heading = (
-        r"& & & dense & \multicolumn{5}{c}{Speedup over dense}"
+        r"& & & Time & \multicolumn{5}{c}{Speedup over dense}"
         r" & \multicolumn{5}{c}{$\delta C_V$ (\textperthousand)} \\"
         "\n"
         r"\cmidrule(lr){5-9} \cmidrule(lr){10-14}"
         "\n"
-        r"& & & & \multicolumn{4}{c}{truncated} & exact"
+        r"& & & dense & \multicolumn{4}{c}{truncated} & exact"
         r" & \multicolumn{4}{c}{truncated} & exact \\"
         "\n"
         r"\cmidrule(lr){5-8} \cmidrule(lr){9-9} \cmidrule(lr){10-13} \cmidrule(lr){14-14}"
